@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: akash24400/skillpulse-backend:latest
+          image: akash24400/skillpulse-backend:4e1dd36b994c71342d54fdd338eabd081d84115d
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
