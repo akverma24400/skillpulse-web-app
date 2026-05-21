@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: akash24400/skillpulse-frontend:6e0b6ae673214df92b534c14a3bf49d1c07adc87
+          image: akash24400/skillpulse-frontend:31e40b4819d715e692ab7f1b4e3fc1a6b3075eb7
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
