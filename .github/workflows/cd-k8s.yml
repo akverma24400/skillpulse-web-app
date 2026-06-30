@@ -26,8 +26,8 @@ jobs:
             echo "ERROR: DOCKERHUB_USERNAME secret is not set."
             exit 1
           fi
-          sed -i "s|image: ${DOCKER_USER}/skillpulse-backend:.*|image: ${DOCKER_USER}/skillpulse-backend:${SHA}|"  k8s/backend.yaml
-          sed -i "s|image: ${DOCKER_USER}/skillpulse-frontend:.*|image: ${DOCKER_USER}/skillpulse-frontend:${SHA}|" k8s/frontend.yaml
+          sed -i "s|image: ${DOCKER_USER}/skillpulse-backend:.*|image: ${DOCKER_USER}/skillpulse-backend:${SHA}|"  k8s/backend.yml
+          sed -i "s|image: ${DOCKER_USER}/skillpulse-frontend:.*|image: ${DOCKER_USER}/skillpulse-frontend:${SHA}|" k8s/frontend.yml
 
       - name: Commit + push if changed
         env:
