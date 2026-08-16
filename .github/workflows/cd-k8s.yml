@@ -39,6 +39,6 @@ jobs:
             echo "Manifests already pinned to ${SHA}; nothing to commit."
             exit 0
           fi
-          git add k8s/20-backend.yaml k8s/30-frontend.yaml
+          git add k8s/backend.yaml k8s/frontend.yaml
           git commit -m "deploy: pin backend+frontend to ${SHA:0:7}"
           git push
